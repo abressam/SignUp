@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registerText"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/usernameEditText"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/passwordEditText"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/usernameEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/usernameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
+            app:layout_constraintVertical_bias="0.1"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/confirmPasswordEditText"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+            app:layout_constraintVertical_bias="0.1"
+            tools:ignore="LabelFor" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/confirmPasswordEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/confirmPasswordEditText"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/registerButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SignUp</string>
+    <string name="registerText">Register</string>
+    <string name="usernameEditText">Username</string>
+    <string name="passwordEditText">Password</string>
+    <string name="confirmPasswordEditText">Confirm password</string>
+    <string name="registerButton">Sign up</string>
+    <string name="spinner">User type</string>
+    <string name="loginButton">Sign in</string>
+    <string name="loginText">Login</string>
+    <string name="cresdentialsText">Credentials</string>
+    <string name="newUsernameEditText">New username</string>
+    <string name="newPasswordEditText">New password</string>
+    <string name="cresdentialsButton">Save</string>
+
+    <string-array name="user_type">
+        <item>user</item>
+        <item>admin</item>
+        <item>mkt</item>
+    </string-array>
+</resources>
